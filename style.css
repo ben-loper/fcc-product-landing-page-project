@@ -1,0 +1,172 @@
+#header-img {
+    width: 30%; 
+    min-width: 300px
+   }
+   
+   header {
+     position: fixed;
+     background-color: white;
+     top: 0;
+     width: 95%;
+     display: grid;
+     align-items: center;
+     grid-template-columns: 55% 45%;
+     padding: 0px 50px 0px 50px;
+   }
+   
+   nav ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     list-style: none;
+     margin-top: 10px;
+   }
+   
+   .nav-link {
+     text-decoration: none;
+     color: black;
+     font-size: 18px;
+   }
+   
+   main {
+     margin-top: 55px;
+   }
+   
+   #main-content {
+     display: grid;
+     grid-template-columns: 100%;
+     align-items: start;
+     justify-items: center;
+     padding: 0px 10%;
+     row-gap: 100px;
+   }
+   
+   #form {
+     display: grid;
+     grid-template-columns: 100%;
+     grid-row-gap: 20px;
+     justify-items: center;
+   }
+   
+   #form h2 {
+     margin: 0;
+   }
+   
+   #form input[type="email"] {
+     width: 250px;
+     height: 20px;
+     padding-left: 10px;
+   }
+   
+   #form input[type="submit"] {
+     background-color: #FFA500;
+     font-size: 20px;
+     border: none;
+     border-radius: 5px;
+     padding: 5px 0;
+     width: 140px
+   }
+   
+   #information-panel {
+     display: grid;
+     grid-template-columns: 100%;
+     row-gap: 50px;
+   }
+   
+   .info-panel-row {
+     display: grid;
+     grid-template-columns: 5% 95%;
+     column-gap: 60px;
+   }
+   
+   .icon-column{
+     justify-self: center;
+   }
+   
+   .icon {
+     color: #FFA500;
+   }
+   
+   .row-info h2 {
+     margin: 0;
+   }
+   
+   .row-info p {
+     margin: 0;
+   }
+   
+   #pricing-panel {
+     display: grid;
+     grid-template-columns: 33% 33% 33%;
+     column-gap: 20px;
+   }
+   
+   .price-info-card {
+     border: 1px black solid;
+     border-radius: 3px;
+     text-align: center;
+     min-width: 270px;
+     padding-bottom: 20px;
+   }
+   
+   .price-info-title {
+     background-color: #ddd;
+   }
+   
+   .price-info-title h3 {
+     margin-top: 0;
+     padding: 8px 0;
+   }
+   
+   .instrument-price {
+     margin: 15px 0;
+   }
+   
+   .price-info-card p {
+     margin: 7px 0px;
+   }
+   
+   .price-select-btn {
+     background-color: #FFA500;
+     font-size: 18px;
+     border: none;
+     border-radius: 5px;
+     padding: 5px 5px;
+     margin-top: 20px;
+   }
+   
+   @media only screen and (max-width: 768px) {
+     /* For mobile phones: */
+     nav ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     list-style: none;
+     margin-top: 5px;
+       padding-left: 0;
+       
+   }
+     header {
+     position: fixed;
+     background-color: white;
+     top: 0;
+     width: 100%;
+     left: 0;
+     display: grid;
+     justify-items: center;
+     grid-template-columns: 100%;
+     padding: 0;
+   }
+     main {
+     margin-top: 120px;
+   }
+     #main-content {
+     padding: 0px;
+     width: 100%;
+   }
+     #pricing-panel {
+       display: grid;
+       grid-template-columns: 100%;
+       row-gap: 20px;
+     }
+   }
